@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: rgb(210, 183, 235);
+}
+.container{
+    background-color: rgb(180, 116, 240);
+    width: 80%;
+    height: 85vh;
+    margin: 4% 10%;
+    padding-top: 1%;
+     
+}
+.main{
+    background-color: rgb(194, 141, 243);
+    width: 80%;
+    height: 75vh;
+    margin: 1% 10%;
+    box-shadow: 5px 10px 10px 5px;
+    text-align: center;
+}
+.header{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 50px;
+    font-weight: 700;    
+}
+ 
+input{
+    background-color:rgb(194, 141, 243) ;
+    width: 20%;
+    border:none;
+    font-size:200px;
+    color:rgb(63, 33, 92);
+    text-align: center;
+}
+ .change{
+    padding:20px;
+    background-color: rgb(110, 74, 143);
+    color:whitesmoke;
+    
+ }
+#decrement{
+   margin-right: 150px;
+
+}
+#increment{
+    margin-left: 150px;
+}
+}

@@ -25,25 +25,18 @@ lowerCount.addEventListener("click",()=>{
 function updateDisplay(){
     counterElem.innerHTML = count;
 };
-
- 
-startAdd.addEventListener("click",()=>{
-    let x = firstNum.value;
-    let y = secondNum.value;
-   addSum.innerHTML = add(x)(y);
-   firstNum.value= " ";
-   secondNum.value = " ";
-   
-});
-
  let sum = 0;
-function add(x){
-    return  function(y){ 
-     return Number(x) + Number(y);        
-    }    
+ let num1 = X;
+ let num2 = Y;
+startAdd.addEventListener("click",()=>{
+ addSum.innerHTML = sum;
+});
+function add(X){
+    return function(Y){
+        return X + Y;
+    }
 };
- 
-
+add(X)(Y); 
     countTime=0;
  function getTime(){
     countTime++;

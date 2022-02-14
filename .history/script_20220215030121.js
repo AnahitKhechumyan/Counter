@@ -31,8 +31,8 @@ startAdd.addEventListener("click",()=>{
     let x = firstNum.value;
     let y = secondNum.value;
    addSum.innerHTML = add(x)(y);
-   firstNum.value= " ";
-   secondNum.value = " ";
+   firstNum.innerHTML= "";
+   secondNum.innerHTML= "";
    
 });
 
@@ -43,6 +43,11 @@ function add(x){
     }    
 };
  
+/*let  add = ((x) =>{
+    return function(y){
+        return x + y;   
+       } 
+});*/
 
     countTime=0;
  function getTime(){

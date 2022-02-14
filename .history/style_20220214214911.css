@@ -64,32 +64,3 @@ body{
     color:whitesmoke;
     font-size: 40px;
 }
-.firstInput, .secondInput{
-    width: 8%;
-    padding:3px;
-}
-.timer{
-    padding:2px 3px;
-    font-size: 30px;
-   width: 5%;
-   border:none;
-   color:rebeccapurple;
-}
-
-.getTime, .stopTime{
-    margin-top:1%;
-    background-color:rgb(199, 135, 248); 
-    color:rgb(41, 20, 61);
-    cursor:pointer;
-}
-.getTime:hover, .stopTime:hover{
-    background-color: whitesmoke;
-    font-weight: 200;
-}
-h3{
-    cursor:pointer;
-}
-.add{
-    border:none;
-    background-color: rgb(199, 135, 248);
-}

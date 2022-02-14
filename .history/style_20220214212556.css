@@ -4,8 +4,8 @@ body{
 }
 .container{
     background-color: rgb(180, 116, 240);
-    width: 86%;
-    height: 90vh;
+    width: 84%;
+    height: 85vh;
     margin: 2% 10%;
     padding-top: 1%;
      
@@ -13,9 +13,9 @@ body{
 .main{
     background-color: rgb(199, 135, 248);
     width: 80%;
-    height: 82vh;
+    height: 80vh;
     margin: 1% 10%;
-    box-shadow: 5px 12px 12px 5px;
+    box-shadow: 5px 10px 10px 5px;
     text-align: center;
 }
 .header{
@@ -57,39 +57,4 @@ body{
     background-color:whitesmoke;
     color:rgb(110, 74, 143);
     cursor:pointer;
-}
-.sum{
-    border:none;
-    background-color: rgb(199, 135, 248);
-    color:whitesmoke;
-    font-size: 40px;
-}
-.firstInput, .secondInput{
-    width: 8%;
-    padding:3px;
-}
-.timer{
-    padding:2px 3px;
-    font-size: 30px;
-   width: 5%;
-   border:none;
-   color:rebeccapurple;
-}
-
-.getTime, .stopTime{
-    margin-top:1%;
-    background-color:rgb(199, 135, 248); 
-    color:rgb(41, 20, 61);
-    cursor:pointer;
-}
-.getTime:hover, .stopTime:hover{
-    background-color: whitesmoke;
-    font-weight: 200;
-}
-h3{
-    cursor:pointer;
-}
-.add{
-    border:none;
-    background-color: rgb(199, 135, 248);
 }

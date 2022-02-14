@@ -4,11 +4,7 @@ let lowerCount =document.querySelector('.decrement');
 let getTimer = document.querySelector('.getTime'); 
 let stopTimer = document.querySelector('.stopTime'); 
 let goTimer = document.querySelector('.timer');
-let startAdd = document.querySelector('.add'); 
-let addSum = document.querySelector('.sum'); 
-let firstNum = document.querySelector('.firstInput');
-let secondNum = document.querySelector('.secondInput');
-
+let startAdd = document.querySelector('.add');
 
     let count = 0;
     updateDisplay();
@@ -25,25 +21,18 @@ lowerCount.addEventListener("click",()=>{
 function updateDisplay(){
     counterElem.innerHTML = count;
 };
-
- 
+  
+ let num1 = X;
+ let num2 = Y;
 startAdd.addEventListener("click",()=>{
-    let x = firstNum.value;
-    let y = secondNum.value;
-   addSum.innerHTML = add(x)(y);
-   firstNum.value= " ";
-   secondNum.value = " ";
-   
+    add(X)(Y);
 });
-
- let sum = 0;
-function add(x){
-    return  function(y){ 
-     return Number(x) + Number(y);        
-    }    
+function add(X){
+    return function(Y){
+        return X + Y;
+    }
 };
  
-
     countTime=0;
  function getTime(){
     countTime++;

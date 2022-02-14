@@ -43,6 +43,11 @@ function add(x){
     }    
 };
  
+/*let  add = ((x) =>{
+    return function(y){
+        return x + y;   
+       } 
+});*/
 
     countTime=0;
  function getTime(){

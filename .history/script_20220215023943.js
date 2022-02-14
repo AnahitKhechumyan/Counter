@@ -28,21 +28,27 @@ function updateDisplay(){
 
  
 startAdd.addEventListener("click",()=>{
+    //let x = firstNum.innerHTML;
     let x = firstNum.value;
+    console.log(x);
+    //let y = secondNum.innerHTML;
     let y = secondNum.value;
    addSum.innerHTML = add(x)(y);
-   firstNum.value= " ";
-   secondNum.value = " ";
-   
+   console.log(add(x)(y));
 });
 
- let sum = 0;
+
 function add(x){
-    return  function(y){ 
-     return Number(x) + Number(y);        
+    return  function(y){
+     return  (x + y);   
     }    
 };
- 
+  
+/*let  add = ((x) =>{
+    return function(y){
+        return x + y;   
+       } 
+});*/
 
     countTime=0;
  function getTime(){

@@ -82,14 +82,6 @@ body{
     color:rgb(41, 20, 61);
     cursor:pointer;
 }
-.getTime:hover, .stopTime:hover{
-    background-color: whitesmoke;
-    font-weight: 200;
-}
 h3{
     cursor:pointer;
-}
-.add{
-    border:none;
-    background-color: rgb(199, 135, 248);
 }

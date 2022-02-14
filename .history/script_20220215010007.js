@@ -26,23 +26,22 @@ function updateDisplay(){
     counterElem.innerHTML = count;
 };
 
- 
-startAdd.addEventListener("click",()=>{
-    let x = firstNum.value;
-    let y = secondNum.value;
-   addSum.innerHTML = add(x)(y);
-   firstNum.value= " ";
-   secondNum.value = " ";
-   
-});
-
  let sum = 0;
+ //let num1 = X;
+ //let num2 = Y;
+startAdd.addEventListener("click",()=>{
+ addSum.innerHTML = sum;
+});
+let x = firstNum.innerHTML;
+let y = secondNum.innerHTML; 
 function add(x){
-    return  function(y){ 
-     return Number(x) + Number(y);        
-    }    
+    return function(y){
+        return x + y;
+    }
 };
- 
+add(x)(y); 
+
+
 
     countTime=0;
  function getTime(){
