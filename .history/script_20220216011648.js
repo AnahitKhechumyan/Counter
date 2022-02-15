@@ -42,26 +42,26 @@ function add(x) {
     return Number(x) + Number(y);
   };
 }
-     
-getFibonacci.addEventListener("click", () => {
     let f = inputNum.value;
-    addFibonacci.value = findFibonacci(f); 
+getFibonacci.addEventListener("click", () => {
+    addFibonacci.innerHTML = findFibonacci(f); 
+    console.log(findFibonacci(f));
     inputNum.value = " ";
   });
 
-  let findFibonacci = function(f){
-              if(f<=0){
-                   return 0;
-                 }
-              if(f===1){
-                   return 1;
-                 }
-              if(f===2){
-                   return 2; 
-                }
-    return findFibonacci(f-2) + findFibonacci(f-1);
-};
+     
+function findFibonacci(f) {
+    let n1 = 0, n2 = 1, nextN;
+    for (let i = 1; i <= f; i++) {
+        console.log(n1);
+         nextN = n1 + n2;
+          n1 = n2;
+          n2 = nextN;
+    }
+    return  nextN;
+}
    
+  
 countTime = 0;
 function getTime() {
   countTime++;

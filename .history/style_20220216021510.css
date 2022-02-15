@@ -77,10 +77,6 @@ body{
 .inputNumber, .inputFibonacci{
     width: 7%;
     padding:3px;
-    margin-right: 30px;
-}
-.inputNumber{
-    margin-right: 30px;
 }
 input{
     background-color: rgb(227, 196, 250);
@@ -89,7 +85,8 @@ input{
 .main >span{
     font-size: 17px;
     font-weight: 700;
-    color:rgb(41, 20, 61);
+    color:rgb(110, 74, 143);
+    padding-left:10px;
    }
  
 .timer{
@@ -113,8 +110,7 @@ input{
 }
 h3{
     cursor:pointer;
-    color:rgb(41, 20, 61);
-    margin-right: 30px;
+    color:rgb(110, 74, 143);
 }
 .add{
     border:none;

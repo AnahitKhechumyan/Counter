@@ -89,7 +89,7 @@ input{
 .main >span{
     font-size: 17px;
     font-weight: 700;
-    color:rgb(41, 20, 61);
+    color:rgb(110, 74, 143);
    }
  
 .timer{
@@ -113,8 +113,7 @@ input{
 }
 h3{
     cursor:pointer;
-    color:rgb(41, 20, 61);
-    margin-right: 30px;
+    color:rgb(110, 74, 143);
 }
 .add{
     border:none;

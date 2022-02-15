@@ -10,7 +10,7 @@ let firstNum = document.querySelector(".firstInput");
 let secondNum = document.querySelector(".secondInput");
 let getFibonacci = document.querySelector(".fibonacci");
 let inputNum = document.querySelector(".inputNumber");
-let  addFibonacci = document.querySelector(".inputFibonacci");
+let addFibonacci = document.querySelector(".inputFibonacci");
 
 let count = 0;
 updateDisplay();
@@ -42,26 +42,27 @@ function add(x) {
     return Number(x) + Number(y);
   };
 }
-     
+
 getFibonacci.addEventListener("click", () => {
-    let f = inputNum.value;
-    addFibonacci.value = findFibonacci(f); 
+    let f = inputNum.value; 
+    addFibonacci.innerHTML = findFibonacci(f);
     inputNum.value = " ";
   });
 
-  let findFibonacci = function(f){
-              if(f<=0){
-                   return 0;
-                 }
-              if(f===1){
-                   return 1;
-                 }
-              if(f===2){
-                   return 2; 
-                }
-    return findFibonacci(f-2) + findFibonacci(f-1);
-};
-   
+  
+function findFibonacci(f) {
+    let n1 = 0, n2 = 1, nextN;
+    
+    console.log('Fibonacci Series:');
+    
+    for (let i = 1; i <= f; i++) {
+        console.log(n1);
+        nextN = n1 + n2;
+        n1 = n2;
+        n2 = nextN;
+    }
+}
+
 countTime = 0;
 function getTime() {
   countTime++;

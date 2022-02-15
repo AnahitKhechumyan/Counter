@@ -9,8 +9,6 @@ let addSum = document.querySelector(".sum");
 let firstNum = document.querySelector(".firstInput");
 let secondNum = document.querySelector(".secondInput");
 let getFibonacci = document.querySelector(".fibonacci");
-let inputNum = document.querySelector(".inputNumber");
-let  addFibonacci = document.querySelector(".inputFibonacci");
 
 let count = 0;
 updateDisplay();
@@ -42,26 +40,8 @@ function add(x) {
     return Number(x) + Number(y);
   };
 }
-     
-getFibonacci.addEventListener("click", () => {
-    let f = inputNum.value;
-    addFibonacci.value = findFibonacci(f); 
-    inputNum.value = " ";
-  });
 
-  let findFibonacci = function(f){
-              if(f<=0){
-                   return 0;
-                 }
-              if(f===1){
-                   return 1;
-                 }
-              if(f===2){
-                   return 2; 
-                }
-    return findFibonacci(f-2) + findFibonacci(f-1);
-};
-   
+
 countTime = 0;
 function getTime() {
   countTime++;

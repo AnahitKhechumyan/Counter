@@ -49,19 +49,25 @@ getFibonacci.addEventListener("click", () => {
     inputNum.value = " ";
   });
 
-  let findFibonacci = function(f){
-              if(f<=0){
-                   return 0;
-                 }
-              if(f===1){
-                   return 1;
-                 }
-              if(f===2){
-                   return 2; 
-                }
-    return findFibonacci(f-2) + findFibonacci(f-1);
-};
+ /* let findFibonacci = function(index){
+              if(index<=0){ return 0; }
+              if(index===1){ return 1; }
+              if(index===2){ return 2; }
+
+    return findFibonacci(index-2) + findFibonacci(index-1);
+}*/
    
+ let findFibonacci =  function(f) {
+    let n1 = 0, n2 = 1, nextN;
+    for (let i = 1; i <= f; i++) {
+        console.log(n1);
+         nextN = n1 + n2;
+          n1 = n2;
+          n2 = nextN;
+    }
+}
+   
+  
 countTime = 0;
 function getTime() {
   countTime++;

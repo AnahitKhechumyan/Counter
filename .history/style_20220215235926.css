@@ -64,7 +64,7 @@ body{
     border:none;
     background-color: rgb(199, 135, 248);
     color:whitesmoke;
-    font-size: 38px;
+    font-size: 40px;
 }
 .firstInput, .secondInput{
     width: 8%;
@@ -72,33 +72,14 @@ body{
 }
 .fibonacci{
     background-color: rgb(199, 135, 248);
-    border:none;
+    border:none; 
 }
-.inputNumber, .inputFibonacci{
-    width: 7%;
-    padding:3px;
-    margin-right: 30px;
-}
-.inputNumber{
-    margin-right: 30px;
-}
-input{
-    background-color: rgb(227, 196, 250);
-}
-
-.main >span{
-    font-size: 17px;
-    font-weight: 700;
-    color:rgb(41, 20, 61);
-   }
- 
 .timer{
     padding:2px 3px;
     font-size: 30px;
    width: 5%;
    border:none;
    color:rebeccapurple;
-   background-color:rgb(199, 135, 248);;
 }
 
 .getTime, .stopTime{
@@ -113,11 +94,8 @@ input{
 }
 h3{
     cursor:pointer;
-    color:rgb(41, 20, 61);
-    margin-right: 30px;
 }
 .add{
     border:none;
     background-color: rgb(199, 135, 248);
 }
- 
