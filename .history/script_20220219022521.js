@@ -10,41 +10,26 @@ let firstNum = document.querySelector(".firstInput");
 let secondNum = document.querySelector(".secondInput");
 let getFibonacci = document.querySelector(".fibonacci");
 let inputNum = document.querySelector(".inputNumber");
-let addFibonacci = document.querySelector(".inputFibonacci");
+let  addFibonacci = document.querySelector(".inputFibonacci");
 
-   let count = 0; 
-   function  Counter(){
-   function changeBy(val){
-     count += val;
-   }
-   return {
-     increment: function(){
-       changeBy(1);
-     },
-     decrement: function(){
-      changeBy(-1);
-    },
-    value: function(){
-      return count;
-    }
-   }
- };
 
-   let counter =new Counter();
-
-   counter.value(); 
-
-   addCount.addEventListener("click", () => {
-   counter.increment();
-   counterElem.innerHTML = count;
-   });
  
-   lowerCount.addEventListener("click", () => {
-   counter.decrement();
-   counterElem.innerHTML = count;
-   });
+let count = 0;
+updateDisplay();
+function Counter(){
+  //let count = 0;
+this.up = function(){
+  return ++count;
+};
+this.down = function(){
+  return --count;
+};
 
-//------------------------------------------
+}
+let counter = new Counter;
+console.log(counter);
+ counter.onclick = this.down;
+  
 /*let count = 0;
 updateDisplay();
 
@@ -55,18 +40,18 @@ addCount.addEventListener("click", () => {
 lowerCount.addEventListener("click", () => {
   count--;
   updateDisplay();
-});
-function updateDisplay(){
+});*/
+
+function updateDisplay() {
   counterElem.innerHTML = count;
-};*/  
-//-------------------------------------------- 
+}
 
 startAdd.addEventListener("click", () => {
   let x = firstNum.value;
   let y = secondNum.value;
   addSum.innerHTML = add(x)(y);
-  //firstNum.value = " ";
-  //secondNum.value = " ";
+  firstNum.value = " ";
+  secondNum.value = " ";
 });
 
 let sum = 0;
@@ -79,7 +64,7 @@ function add(x) {
 getFibonacci.addEventListener("click", () => {
     let f = inputNum.value;
     addFibonacci.value = findFibonacci(f); 
-   // inputNum.value = " ";
+    inputNum.value = " ";
   });
 
   let findFibonacci = function(f){
@@ -107,6 +92,6 @@ getTimer.addEventListener("click", () => {
 
 stopTimer.addEventListener("click", () => {
   clearInterval(timer);
+  countTime = 0;
+  goTimer.innerHTML = 0;
 });
-//Եթե անհրաժեշտ է գործողությունները կատարելուց հետո ինփութներում մուտքագրված
-//թվերը ջնջվեն, ապա պետք է էջ68,69,82-ի կոմենթները հանել։

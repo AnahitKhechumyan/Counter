@@ -108,5 +108,3 @@ getTimer.addEventListener("click", () => {
 stopTimer.addEventListener("click", () => {
   clearInterval(timer);
 });
-//Եթե անհրաժեշտ է գործողությունները կատարելուց հետո ինփութներում մուտքագրված
-//թվերը ջնջվեն, ապա պետք է էջ68,69,82-ի կոմենթները հանել։

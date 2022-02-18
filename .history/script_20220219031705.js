@@ -31,17 +31,17 @@ let addFibonacci = document.querySelector(".inputFibonacci");
  };
 
    let counter =new Counter();
-
-   counter.value(); 
-
+    
    addCount.addEventListener("click", () => {
    counter.increment();
    counterElem.innerHTML = count;
+   counter.value();
    });
  
    lowerCount.addEventListener("click", () => {
    counter.decrement();
    counterElem.innerHTML = count;
+   counter.value();
    });
 
 //------------------------------------------
@@ -65,8 +65,8 @@ startAdd.addEventListener("click", () => {
   let x = firstNum.value;
   let y = secondNum.value;
   addSum.innerHTML = add(x)(y);
-  //firstNum.value = " ";
-  //secondNum.value = " ";
+  firstNum.value = " ";
+  secondNum.value = " ";
 });
 
 let sum = 0;
@@ -79,7 +79,7 @@ function add(x) {
 getFibonacci.addEventListener("click", () => {
     let f = inputNum.value;
     addFibonacci.value = findFibonacci(f); 
-   // inputNum.value = " ";
+    inputNum.value = " ";
   });
 
   let findFibonacci = function(f){
@@ -107,6 +107,6 @@ getTimer.addEventListener("click", () => {
 
 stopTimer.addEventListener("click", () => {
   clearInterval(timer);
+  countTime = 0;
+  goTimer.innerHTML = 0;
 });
-//Եթե անհրաժեշտ է գործողությունները կատարելուց հետո ինփութներում մուտքագրված
-//թվերը ջնջվեն, ապա պետք է էջ68,69,82-ի կոմենթները հանել։
